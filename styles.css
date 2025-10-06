@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+    --fonte-cabecalho: "Caveat", cursive;
+    --fonte-cabecalho-itens: "DM Serif Display", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.phasmopobhia {
+    color: grey;
+    font-size: 80px;
+    font-family: var(--fonte-cabecalho);
+    text-decoration: none;
+}
+
+.lista__pai {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 32px;
+    font-family: var(--fonte-cabecalho-itens);
+}
+
+.cabecalho:hover {
+    font-size: 40px;
+    color: grey;
+}
+
+.cards__container {
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card__container {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.card__texto {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+
+    color: #2a1501;
+    font-family: var(--fonte-cabecalho);
+    font-weight: 800;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+
+    z-index: 1;
+}
+
+.card__texto h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.card-texto h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.caracteristicas__fantasmas {
+    list-style-type: decimal;
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 30px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-weight: 800;
+}
+
+.caracteristicas__fantasmas::-webkit-scrollbar {
+    width: 8px;
+}
+
+.info__fantasma {
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    font-size: 1.25em;
+}
