@@ -172,6 +172,17 @@ main {
     margin: 0 auto;
 }
 
+/*Contato*/
+.contato {
+    text-decoration: 0;
+    color: black;
+}
+
+.contato:hover {
+    color: white;
+    font-size: 34px;
+}
+
 /* Media Queries para dispositivos móveis */
 @media (max-width: 1200px) {
     .cards__container { gap: 3vw; }
